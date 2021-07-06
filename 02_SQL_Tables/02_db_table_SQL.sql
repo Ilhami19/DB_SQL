@@ -29,11 +29,14 @@ INSERT INTO test(name, age) VALUES ("Grizabella", 29);
 #INSERT INTO test(name, age) VALUES ("Alonzo", 35);
 INSERT INTO test VALUES();
 
-SELECT * from test;
 
-#DROP TABLE IF EXISTS test;
+/* -- Tabelleninhalte anzeigen -- */
+SELECT * FROM test;
 
-#SHOW TABLES;
+/* Tabelle test löschen, falls vorhanden */
+DROP TABLE IF EXISTS test;
+
+SHOW TABLES;
 
 
 
