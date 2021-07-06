@@ -15,8 +15,10 @@ DROP Table IF EXISTS boo.test;
 
 /*
    tabelle mit ID als PRIMARY KEY --> Duplikate möglich 
-   DEFAULT 
+   AUTO_INCREMENT ++
+   DEFAULT-Werte eintragen
 */
+
 /*
    NULL wird nicht mehr zugelassen
    DEFAULT-Werte eintragen
@@ -25,7 +27,7 @@ DROP Table IF EXISTS boo.test;
 /* Tabelle anlegen, falls noch nicht vorhanden */
 CREATE TABLE IF NOT EXISTS boo.test
 (
-    id INT NOT NULL PRIMARY KEY,
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(20) NOT NULL DEFAULT "TBA",
     age INT NOT NULL DEFAULT 0
 );
@@ -34,9 +36,10 @@ CREATE TABLE IF NOT EXISTS boo.test
 DESCRIBE test;
 
 /* ---- DATEN ------ */
-INSERT INTO test(id, name, age) VALUES (1, "Grizabella", 29);
-INSERT INTO test(id, age, name) VALUES (2, 35, "Alonzo");
-INSERT INTO test(id, age, name) VALUES (3, 35, "Alonzo");
+INSERT INTO test(name, age) VALUES ("Grizabella", 29);
+INSERT INTO test(name, age) VALUES ( "Gus", 45);
+INSERT INTO test(age, name) VALUES (35, "Alonzo");
+INSERT INTO test(age, name) VALUES (35, "Alonzo");
 INSERT INTO test VALUES();
 
 # Doppelte Datensätze werden zugelassen !
