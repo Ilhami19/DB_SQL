@@ -1,9 +1,11 @@
 /* USER DB Vers.1 */
 
+/* DB */
 DROP DATABASE IF EXISTS boo;
 CREATE DATABASE IF NOT EXISTS boo;
 USE boo;
 
+/* Tabelle users*/
 DROP TABLE IF EXISTS users;
 
 CREATE TABLE IF NOT EXISTS users

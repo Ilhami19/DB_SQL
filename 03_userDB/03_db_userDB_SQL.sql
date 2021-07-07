@@ -1,5 +1,6 @@
 /* USER DB Vers.1 */
 
+/* DB */
 DROP DATABASE IF EXISTS boo;
 CREATE DATABASE IF NOT EXISTS boo;
 USE boo;
