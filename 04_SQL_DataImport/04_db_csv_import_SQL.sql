@@ -1,0 +1,18 @@
+
+DROP DATABASE IF EXISTS boo;
+CREATE DATABASE IF NOT EXISTS boo;
+USE boo;
+
+DROP TABLE IF EXISTS cats;
+
+CREATE TABLE IF NOT EXISTS cats
+(
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    cate_name VARCHAR(20) NOT NULL,
+    fur_color VARCHAR(20) NOT NULL,
+    age INT NOT NULL
+);
+
+DESCRIBE cats; 
+
+#INSERT INTO cats (cate_name, fur_color, age)()
