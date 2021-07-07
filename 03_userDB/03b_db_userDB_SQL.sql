@@ -28,10 +28,17 @@ INSERT INTO users(user_name, user_pwd, first_name, family_name) VALUES ("max", s
 INSERT INTO users(user_name, user_pwd, first_name, family_name) VALUES ("maxine", sha1("#7Dx0"), "Maxine", "Mütze");
 INSERT INTO users(user_name, user_pwd, first_name, family_name) VALUES ("max2", sha1("user1234"), "Max", "Mützerich");
 
+
 SELECT * FROM users;
 
+/* Änderungen an bestehender Tabelle */
+ALTER TABLE users ADD user_plz INT (5) NOT NULL DEFAULT 12345;
+DESCRIBE users;
 
+UPDATE users SET user_plz =70367 WHERE id < 4;
+#UPDATE users SET user_plz =70367 WHERE id = 1;
 
+SELECT * FROM users;
 
 
 
