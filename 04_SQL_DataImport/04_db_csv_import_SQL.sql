@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS cats
 DESCRIBE cats; 
 
 /* CSV-Data parsen */
-LOAD DATA LOCAL INFILE "04_SQL_DataImport/cats_export.csv"
+LOAD DATA LOCAL INFILE "04_SQL_DataImport/data/cats_export.csv"
 INTO TABLE cats
 FIELDS TERMINATED BY ";"
 LINES TERMINATED BY "\n"
