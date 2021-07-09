@@ -27,7 +27,7 @@ SELECT
     no_yrs "Jahre ++"
 FROM ccc_list
 #ORDER BY price ASC #beginned mit günstigster Aktie
-ORDER BY price DESC #beginned mit teurster Aktie
+#ORDER BY price DESC #beginned mit teurster Aktie
 ORDER BY no_yrs DESC, sector ASC # Kombi. Numerisch/alphabetisch langste 
 LIMIT 20;
 
